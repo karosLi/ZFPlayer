@@ -87,6 +87,7 @@ typedef void (^ZFTXVodPlayerStateAction)(NSDictionary *params);
     _config.playerType         = self.ZFTXConfig.playerType == 0 ? PLAYER_FFPLAY : PLAYER_AVPLAYER;
     _config.progressInterval   = 1.0;
     _config.enableAccurateSeek = YES;
+    _config.maxBufferSize = 5;
     
     // https://github.com/tencentyun/SuperPlayer_iOS/issues/64
     _config.cacheFolderPath = self.ZFTXConfig.cacheFolderPath;
