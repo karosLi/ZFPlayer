@@ -86,7 +86,7 @@ typedef void (^ZFTXVodPlayerStateAction)(NSDictionary *params);
     _config                    = [[TXVodPlayConfig alloc] init];
     _config.playerType         = self.ZFTXConfig.playerType == 0 ? PLAYER_FFPLAY : PLAYER_AVPLAYER;
     _config.progressInterval   = 1.0;
-    _config.enableAccurateSeek = YES;
+    _config.enableAccurateSeek = NO;// 不用那么精确，可以提升体验
     _config.maxBufferSize = 5;
     
     // https://github.com/tencentyun/SuperPlayer_iOS/issues/64
