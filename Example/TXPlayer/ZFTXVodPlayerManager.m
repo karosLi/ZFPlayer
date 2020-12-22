@@ -125,19 +125,17 @@ typedef void (^ZFTXVodPlayerStateAction)(NSDictionary *params);
         self.loadState     = ZFPlayerLoadStatePlaythroughOK;
         [self progressUpdate];
         
-        if (self.isPlaying) {
-            if (self.shouldAutoPlay) {
-                self.loadState = ZFPlayerLoadStatePlayable;
-                [self.player setMute:self.muted];
-                if (self.seekTime > 0) {
-                    [self seekToTime:self.seekTime completionHandler:nil];
-                    self.seekTime = 0;  // 滞空, 防止下次播放出错
-                }
-                [self play];
-                [self.player setMute:self.muted];
-            } else {
-                self.seekTime = 0;
+        if (self.shouldAutoPlay) {
+            self.loadState = ZFPlayerLoadStatePlayable;
+            [self.player setMute:self.muted];
+            if (self.seekTime > 0) {
+                [self seekToTime:self.seekTime completionHandler:nil];
+                self.seekTime = 0;  // 滞空, 防止下次播放出错
             }
+            [self play];
+            [self.player setMute:self.muted];
+        } else {
+            self.seekTime = 0;
         }
 
         if (self.playerReadyToPlay) self.playerReadyToPlay(self, self.assetURL);
