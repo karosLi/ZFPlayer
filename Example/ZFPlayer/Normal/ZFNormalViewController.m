@@ -15,6 +15,7 @@
 #import <ZFPlayer/UIImageView+ZFCache.h>
 #import <ZFPlayer/ZFPlayerConst.h>
 #import "ZFUtilities.h"
+#import "ZFTXVodPlayerManager.h"
 @import AVKit;
 
 static NSString *kVideoCover = @"https://upload-images.jianshu.io/upload_images/635942-14593722fe3f0695.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240";
@@ -92,10 +93,10 @@ static NSString *kVideoCover = @"https://upload-images.jianshu.io/upload_images/
 }
 
 - (void)setupPlayer {
-    ZFAVPlayerManager *playerManager = [[ZFAVPlayerManager alloc] init];
+//    ZFAVPlayerManager *playerManager = [[ZFAVPlayerManager alloc] init];
 //    ZFIJKPlayerManager *playerManager = [[ZFIJKPlayerManager alloc] init];
-
-    playerManager.shouldAutoPlay = YES;
+    ZFTXVodPlayerManager *playerManager = [[ZFTXVodPlayerManager alloc] initWithConfig:[ZFTXVodPlayConfig defaultConfig]];
+    playerManager.shouldAutoPlay = NO;
     
     /// 播放器相关
     self.player = [ZFPlayerController playerWithPlayerManager:playerManager containerView:self.containerView];
@@ -122,7 +123,7 @@ static NSString *kVideoCover = @"https://upload-images.jianshu.io/upload_images/
     };
     
     self.player.assetURLs = self.assetURLs;
-    [self.player playTheIndex:0];
+//    [self.player playTheIndex:0];
     [self.controlView showTitle:@"iPhone X" coverURLString:kVideoCover fullScreenMode:ZFFullScreenModeAutomatic];
     
     

@@ -20,6 +20,13 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		7CDA7E4825919917007A792B /* TXLiteAVSDK_Player.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDA7E4725919916007A792B /* TXLiteAVSDK_Player.framework */; };
+		7CDA7E4C25919DF0007A792B /* ZFTXVodPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA7E4B25919DF0007A792B /* ZFTXVodPlayerManager.m */; };
+		7CDA7E4D25919FC0007A792B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D24FA683221FD54B0010A2A2 /* libc++.tbd */; };
+		7CDA7E4F25919FFE007A792B /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDA7E4E25919FFE007A792B /* libsqlite3.0.tbd */; };
+		7CDA7E502591A01C007A792B /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24FA68B221FD5C70010A2A2 /* VideoToolbox.framework */; };
+		7CDA7E522591A057007A792B /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDA7E512591A056007A792B /* libresolv.9.tbd */; };
+		7CDA7E552591A24D007A792B /* ZFTXVodPlayConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDA7E542591A24D007A792B /* ZFTXVodPlayConfig.m */; };
 		80BE2428ECB65735B49B8FC1 /* libPods-ZFPlayer_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4EDC6B3234B489A216C8825 /* libPods-ZFPlayer_Example.a */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		CC112E9A20DBD45E0051EE60 /* ZFMixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC112E9920DBD45E0051EE60 /* ZFMixViewController.m */; };
@@ -95,6 +102,13 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C874D8D2F27E9CDA21BC642 /* ZFPlayer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZFPlayer.podspec; path = ../ZFPlayer.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7CDA7E4725919916007A792B /* TXLiteAVSDK_Player.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TXLiteAVSDK_Player.framework; sourceTree = "<group>"; };
+		7CDA7E4A25919DF0007A792B /* ZFTXVodPlayerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFTXVodPlayerManager.h; sourceTree = "<group>"; };
+		7CDA7E4B25919DF0007A792B /* ZFTXVodPlayerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFTXVodPlayerManager.m; sourceTree = "<group>"; };
+		7CDA7E4E25919FFE007A792B /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		7CDA7E512591A056007A792B /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		7CDA7E532591A24D007A792B /* ZFTXVodPlayConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFTXVodPlayConfig.h; sourceTree = "<group>"; };
+		7CDA7E542591A24D007A792B /* ZFTXVodPlayConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFTXVodPlayConfig.m; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		880FA6F9C4DCEF2BB4D2644B /* Pods-ZFPlayer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZFPlayer_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZFPlayer_Example/Pods-ZFPlayer_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A4EDC6B3234B489A216C8825 /* libPods-ZFPlayer_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZFPlayer_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +197,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CDA7E522591A057007A792B /* libresolv.9.tbd in Frameworks */,
+				7CDA7E502591A01C007A792B /* VideoToolbox.framework in Frameworks */,
+				7CDA7E4F25919FFE007A792B /* libsqlite3.0.tbd in Frameworks */,
+				7CDA7E4D25919FC0007A792B /* libc++.tbd in Frameworks */,
+				7CDA7E4825919917007A792B /* TXLiteAVSDK_Player.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -206,6 +225,8 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				7CDA7E4925919D97007A792B /* TXPlayer */,
+				7CDA7E4625919916007A792B /* SDK */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for ZFPlayer */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -227,6 +248,8 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7CDA7E512591A056007A792B /* libresolv.9.tbd */,
+				7CDA7E4E25919FFE007A792B /* libsqlite3.0.tbd */,
 				D24FA68B221FD5C70010A2A2 /* VideoToolbox.framework */,
 				D24FA689221FD5800010A2A2 /* libbz2.tbd */,
 				D24FA687221FD5770010A2A2 /* libiconv.tbd */,
@@ -303,6 +326,25 @@
 				0040F8EE0D7B4F3A7F8AB74C /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		7CDA7E4625919916007A792B /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				7CDA7E4725919916007A792B /* TXLiteAVSDK_Player.framework */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		7CDA7E4925919D97007A792B /* TXPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				7CDA7E4A25919DF0007A792B /* ZFTXVodPlayerManager.h */,
+				7CDA7E4B25919DF0007A792B /* ZFTXVodPlayerManager.m */,
+				7CDA7E532591A24D007A792B /* ZFTXVodPlayConfig.h */,
+				7CDA7E542591A24D007A792B /* ZFTXVodPlayConfig.m */,
+			);
+			path = TXPlayer;
 			sourceTree = "<group>";
 		};
 		CCED248520DBF1730077E02A /* CollectionView */ = {
@@ -581,7 +623,7 @@
 				ORGANIZATIONNAME = "紫枫";
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = R2U8SE68WE;
+						DevelopmentTeam = 7M2A8Q929Y;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -708,8 +750,10 @@
 				D209360A20B659190002C956 /* ZFNormalViewController.m in Sources */,
 				D227504D21491289002DE221 /* ZFPlayerDetailViewController.m in Sources */,
 				CC112E9D20DBD6600051EE60 /* ZFOtherCell.m in Sources */,
+				7CDA7E552591A24D007A792B /* ZFTXVodPlayConfig.m in Sources */,
 				D2B982712136405500B4A0B9 /* ZFFullScreenViewController.m in Sources */,
 				D2F268BC22A67564008C1F6D /* ZFDouyinCollectionViewController.m in Sources */,
+				7CDA7E4C25919DF0007A792B /* ZFTXVodPlayerManager.m in Sources */,
 				D2EEFE6620BBF3890097D6D9 /* ZFSmallPlayViewController.m in Sources */,
 				D209360020B658AE0002C956 /* ZFTableData.m in Sources */,
 				D243FCA320C543D30014F533 /* ZFDouYinCell.m in Sources */,
@@ -851,11 +895,13 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = NO;
-				DEVELOPMENT_TEAM = R2U8SE68WE;
+				DEVELOPMENT_TEAM = 7M2A8Q929Y;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZFPlayer",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/SDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZFPlayer/ZFPlayer-Prefix.pch";
@@ -865,7 +911,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULEMAP_FILE = "";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.ZFPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.ZFPlayer.karos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
@@ -880,11 +926,13 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = NO;
-				DEVELOPMENT_TEAM = R2U8SE68WE;
+				DEVELOPMENT_TEAM = 7M2A8Q929Y;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZFPlayer",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/SDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZFPlayer/ZFPlayer-Prefix.pch";
@@ -894,7 +942,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULEMAP_FILE = "";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.ZFPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.ZFPlayer.karos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;

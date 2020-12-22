@@ -8,10 +8,12 @@
 
 #import "ZFAppDelegate.h"
 #import <AVFoundation/AVFoundation.h>
+#import <ZFPlayer/ZFPlayerLogManager.h>
 
 @implementation ZFAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [ZFPlayerLogManager setLogEnable:YES];
     return YES;
 }
 
