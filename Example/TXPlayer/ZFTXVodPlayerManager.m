@@ -300,13 +300,16 @@ typedef void (^ZFTXVodPlayerStateAction)(NSDictionary *params);
     if (!_isPreparedToPlay) {
         [self prepareToPlay];
     } else {
-        if ([self.player duration] > 0) {// 如果总时长大于 0，说明是加载过的
-            [self.player resume];
-        } else {
-            [self.player startPlay:self.assetURL.absoluteString];
-        }
-        
+        [self.player resume];
         [self.player setRate:self.rate];
+        if (self.player.config.playerType == PLAYER_AVPLAYER) {
+            _isPlaying     = YES;
+            self.playState = ZFPlayerPlayStatePlaying;
+        }
+        if (self.player.isPlaying) {
+            _isPlaying     = YES;
+            self.playState = ZFPlayerPlayStatePlaying;
+        }
     }
 }
 
@@ -380,7 +383,7 @@ typedef void (^ZFTXVodPlayerStateAction)(NSDictionary *params);
 - (void)initializePlayer {
     self.player                      = [[TXVodPlayer alloc] init];
     self.player.config               = self.config;
-    self.player.isAutoPlay           = self.shouldAutoPlay;
+    self.player.isAutoPlay           = YES;
     self.player.enableHWAcceleration = self.ZFTXConfig.hwAcceleration;
     self.player.vodDelegate          = self;
     [self.player setStartTime:self.ZFTXConfig.startTime];
@@ -388,6 +391,7 @@ typedef void (^ZFTXVodPlayerStateAction)(NSDictionary *params);
     
     self.scalingMode                 = self->_scalingMode;
     self.view.playerView             = self.attachView;
+    [self.player startPlay:self.assetURL.absoluteString];
 }
 
 - (void)progressUpdate {

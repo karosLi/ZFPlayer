@@ -96,7 +96,7 @@ static NSString *kVideoCover = @"https://upload-images.jianshu.io/upload_images/
 //    ZFAVPlayerManager *playerManager = [[ZFAVPlayerManager alloc] init];
 //    ZFIJKPlayerManager *playerManager = [[ZFIJKPlayerManager alloc] init];
     ZFTXVodPlayerManager *playerManager = [[ZFTXVodPlayerManager alloc] initWithConfig:[ZFTXVodPlayConfig defaultConfig]];
-    playerManager.shouldAutoPlay = NO;
+    playerManager.shouldAutoPlay = YES;
     
     /// 播放器相关
     self.player = [ZFPlayerController playerWithPlayerManager:playerManager containerView:self.containerView];
@@ -123,7 +123,7 @@ static NSString *kVideoCover = @"https://upload-images.jianshu.io/upload_images/
     };
     
     self.player.assetURLs = self.assetURLs;
-//    [self.player playTheIndex:0];
+    [self.player playTheIndex:0];
     [self.controlView showTitle:@"iPhone X" coverURLString:kVideoCover fullScreenMode:ZFFullScreenModeAutomatic];
     
     
